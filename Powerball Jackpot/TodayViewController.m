@@ -34,7 +34,7 @@
 
     NSURL *url = [NSURL URLWithString:@"http://www.sceducationlottery.com/webservices/get.asmx/PBJackpot"];
     NSMutableURLRequest *theRequest = [NSMutableURLRequest requestWithURL:url];
-    NSString *msgLength = [NSString stringWithFormat:@"%d", [soapMessage length]];
+    NSString *msgLength = [NSString stringWithFormat:@"%lu", (unsigned long)[soapMessage length]];
     [theRequest addValue: @"text/xml; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
     [theRequest addValue: @"http://www.sceducationlottery.com/webservices/get.asmx/PBJackpot" forHTTPHeaderField:@"SOAPAction"];
     [theRequest addValue: msgLength forHTTPHeaderField:@"Content-Length"];
@@ -72,7 +72,7 @@
 
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
-    NSLog(@"DONE. Received Bytes: %d", [webData length]);
+    NSLog(@"DONE. Received Bytes: %lu", (unsigned long)[webData length]);
     NSString *theXML = [[NSString alloc] initWithBytes: [webData mutableBytes] length:[webData length] encoding:NSUTF8StringEncoding];
     NSLog(theXML);
     xmlParser = [[NSXMLParser alloc] initWithData: webData];

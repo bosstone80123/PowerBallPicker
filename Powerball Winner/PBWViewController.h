@@ -33,7 +33,7 @@
 	NSMutableData *webData;
 	NSMutableString *soapResults;
 	NSXMLParser *xmlParser;
-	BOOL *recordResults;
+	bool *recordResults;
         //For Connecting to Webservice end
 
 }

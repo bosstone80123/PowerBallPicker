@@ -315,7 +315,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = PBW;
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Jon Slaughter";
 				TargetAttributes = {
 					53E2619217E006260060BE61 = {
@@ -447,6 +447,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -458,7 +459,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "009d74cc-2406-43b8-a0c3-7c8b1ac1d9a2";
 				SDKROOT = iphoneos;
@@ -485,7 +486,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "009d74cc-2406-43b8-a0c3-7c8b1ac1d9a2";
@@ -506,6 +507,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Powerball Winner/Powerball Picker-Prefix.pch";
 				INFOPLIST_FILE = "Powerball Winner/Powerball Picker-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jon-Slaughter.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Powerball Picker";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -523,6 +525,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Powerball Winner/Powerball Picker-Prefix.pch";
 				INFOPLIST_FILE = "Powerball Winner/Powerball Picker-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jon-Slaughter.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Powerball Picker";
 				PROVISIONING_PROFILE = "009d74cc-2406-43b8-a0c3-7c8b1ac1d9a2";
 				"PROVISIONING_PROFILE[sdk=*]" = "009d74cc-2406-43b8-a0c3-7c8b1ac1d9a2";
@@ -554,6 +557,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jon-Slaughter.Powerball-Picker.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -581,6 +585,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jon-Slaughter.Powerball-Picker.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;

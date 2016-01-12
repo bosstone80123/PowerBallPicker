@@ -16,12 +16,12 @@
 @synthesize greeting, webData, soapResults, xmlParser;
 
 - (IBAction)randomnumber {
-    int rNumber1 = 1 + rand() % 59;
-    int rNumber2 = 1 + rand() % 59;
-    int rNumber3 = 1 + rand() % 59;
-    int rNumber4 = 1 + rand() % 59;
-    int rNumber5 = 1 + rand() % 59;
-    int rNumber6 = 1 + rand() % 35;
+    int rNumber1 = 1 + rand() % 69;
+    int rNumber2 = 1 + rand() % 69;
+    int rNumber3 = 1 + rand() % 69;
+    int rNumber4 = 1 + rand() % 69;
+    int rNumber5 = 1 + rand() % 69;
+    int rNumber6 = 1 + rand() % 26;
     textviewquickpick1.text  = [[NSString alloc] initWithFormat:@"%d", rNumber1];
     textviewquickpick2.text  = [[NSString alloc] initWithFormat:@"%d", rNumber2];
     textviewquickpick3.text  = [[NSString alloc] initWithFormat:@"%d", rNumber3];
@@ -73,11 +73,11 @@
                              "</soap:Body>\n"
                              "</soap:Envelope>\n"];
     
-    NSLog(soapMessage);
+    //NSLog(soapMessage);
 	
 	NSURL *url = [NSURL URLWithString:@"http://www.sceducationlottery.com/webservices/get.asmx/PBJackpot"];
 	NSMutableURLRequest *theRequest = [NSMutableURLRequest requestWithURL:url];
-    NSString *msgLength = [NSString stringWithFormat:@"%d", [soapMessage length]];
+    NSString *msgLength = [NSString stringWithFormat:@"%lu", (unsigned long)[soapMessage length]];
 	
 	[theRequest addValue: @"text/xml; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
     [theRequest addValue: @"http://www.sceducationlottery.com/webservices/get.asmx/PBJackpot" forHTTPHeaderField:@"SOAPAction"];
@@ -123,9 +123,9 @@
 
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
-	NSLog(@"DONE. Received Bytes: %d", [webData length]);
-	NSString *theXML = [[NSString alloc] initWithBytes: [webData mutableBytes] length:[webData length] encoding:NSUTF8StringEncoding];
-	NSLog(theXML);
+	NSLog(@"DONE. Received Bytes: %lu", (unsigned long)[webData length]);
+	//NSString *theXML = [[NSString alloc] initWithBytes: [webData mutableBytes] length:[webData length] encoding:NSUTF8StringEncoding];
+	//NSLog(theXML);
         //[theXML release];
 	
 	if( xmlParser )

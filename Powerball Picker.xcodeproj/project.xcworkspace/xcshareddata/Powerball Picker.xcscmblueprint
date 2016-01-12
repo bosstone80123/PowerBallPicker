@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "094224354064F3AF49B365F84412657EC544FBA3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "094224354064F3AF49B365F84412657EC544FBA3" : 0,
+    "38B37E35E8C8F650A6159895A4B7E66E00F3C8AB" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "57C21B99-175F-4B61-83D9-A8C39553F8B5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "094224354064F3AF49B365F84412657EC544FBA3" : "PowerBallPicker\/",
+    "38B37E35E8C8F650A6159895A4B7E66E00F3C8AB" : "Powerball%20Winner"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Powerball Picker",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Powerball Picker.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/bosstone80123\/PowerBallPicker.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "094224354064F3AF49B365F84412657EC544FBA3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/bosstone80123\/powerball-picker.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "38B37E35E8C8F650A6159895A4B7E66E00F3C8AB"
+    }
+  ]
+}
