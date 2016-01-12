@@ -116,7 +116,7 @@
 
 -(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
-	NSLog(@"ERROR with theConenction");
+	NSLog(@"ERROR with theConenction",error);
         //[connection release];
         //[webData release];
 }
